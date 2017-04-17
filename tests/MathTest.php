@@ -18,9 +18,9 @@ class MathTest extends PHPUnit
     }
 
     /**
-	 * @expectedException Exception
-	 * @expectedExceptionMessage Parâmetros invalidos
-	 */
+     * @expectedException Exception
+     * @expectedExceptionMessage Parâmetros invalidos
+     */
     public function testSumWithoutParams()
     {
         $this->Math->sum(null, null);
