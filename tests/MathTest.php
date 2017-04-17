@@ -17,4 +17,13 @@ class MathTest extends PHPUnit
         $this->assertEquals(3, $this->Math->sum(1, 2), 'Não somou corretamente');
     }
 
+    /**
+	 * @expectedException Exception
+	 * @expectedExceptionMessage Parâmetros invalidos
+	 */
+    public function testSumWithoutParams()
+    {
+        $this->Math->sum(null, null);
+    }
+
 }
